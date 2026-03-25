@@ -1,0 +1,31 @@
+.my-listings-page { padding: 40px 0 80px; }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+.page-header h1 { font-size: 28px; margin-bottom: 4px; }
+
+.section-heading {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+}
+.section-heading.muted { opacity: 0.6; }
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .page-header { flex-direction: column; gap: 16px; }
+  .listings-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
